@@ -3,51 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HK Trip Guide Connection</title>
+    <title>HK Trip Guide Portal</title>
     <style>
-        body, html {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
             margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
-        .container {
             display: flex;
-            flex-direction: column;
-            height: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
             font-size: 14px;
         }
-        .header a {
-            color: #4da6ff;
+        .btn {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: white;
             text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
-        .header a:hover {
-            text-decoration: underline;
-        }
-        iframe {
-            width: 100%;
-            flex-grow: 1;
-            border: none;
+        .btn:hover {
+            background-color: #357ABD;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            Connecting to HK Trip Guide. If the page does not load, 
-            <a href="https://www.google.com/" target="_blank">click here to open it directly</a>.
-        </div>
-        
-        <iframe src="https://www.google.com/" allowfullscreen></iframe>
+    <div class="card">
+        <h1>Welcome to HK Trip Guide</h1>
+        <p>Click the button below to connect securely to the original website.</p>
+        <a class="btn" href="https://sites.google.com/lkpfc.edu.hk/hktripguide/%E9%A6%96%E9%A0%81?authuser=1">Open Website</a>
     </div>
 
 </body>
