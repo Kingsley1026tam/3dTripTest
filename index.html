@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Trip Guide Connection</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .header a {
+            color: #4da6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            flex-grow: 1;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            Connecting to HK Trip Guide. If the page does not load, 
+            <a href="https://sites.google.com/lkpfc.edu.hk/hktripguide/%E9%A6%96%E9%A0%81?authuser=1" target="_blank">click here to open it directly</a>.
+        </div>
+        
+        <iframe src="https://sites.google.com/lkpfc.edu.hk/hktripguide/%E9%A6%96%E9%A0%81?authuser=1" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
